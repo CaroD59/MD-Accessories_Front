@@ -1,8 +1,29 @@
 .main {
-  padding: 5rem 0;
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  text-align: center;
+}
+
+.title {
+  cursor: pointer;
+  font-family: 'calibri';
+  color: #031330;
+  text-align: center;
+}
+
+.footer {
+  font-family: 'calibri';
+  width: 100%;
+  text-align: center;
+  position: absolute;
+  bottom: 0;
+  color: #fe9580;
+  font-style: italic;
+  font-size: 0.7em;
+}
+
+.bg {
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  z-index: -1;
 }

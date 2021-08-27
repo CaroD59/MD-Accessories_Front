@@ -12,9 +12,25 @@ export default function Home() {
         <link rel='icon' href='/favicon.ico' />
       </Head>
       <main className={styles.main}>
+        <div className={styles.bg}>
+          <Image
+            src='/images/Background.png'
+            layout='fill'
+            objectFit='cover'
+            quality={100}
+            alt='Background'
+          />
+        </div>
+
         <Image src='/images/MD.png' alt='MD' width={500} height={500} />
-        <h1 className={styles.title}>Welcome to MD-Accessories !</h1>
+
+        <Link href='/mainPage' passHref>
+          <h1 className='title'> &gt; Enter here &lt; </h1>
+        </Link>
       </main>
+      <footer>
+        <p className={styles.footer}>Powered by MD Accessories</p>
+      </footer>
     </div>
   );
 }
